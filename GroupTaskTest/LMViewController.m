@@ -22,8 +22,8 @@ typedef void (^blokPrzykladowy)(mach_port_t);
 {
     [super viewDidLoad];
     
-    // Problem: We want to run some scheduled task async with their completion blocks.
-    // Also we want to wait till the momment, when all of the tasks will be completed;
+// Problem: We want to run some scheduled tasks asynchronously with their completion blocks.
+// Also we want to wait till the momment, when all of the tasks completion blocks will be completed.
     
     dispatch_group_t grupa = dispatch_group_create();
     dispatch_queue_t kolejka = dispatch_queue_create("pl.dworak", 0);
